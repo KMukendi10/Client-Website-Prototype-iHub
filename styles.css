@@ -61,3 +61,51 @@ ul{
     border-radius:30px;
     cursor:pointer;
 }
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:50px;
+    padding:80px 5%;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#666;
+    margin-bottom:30px;
+    max-width:550px;
+}
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.hero-btn{
+    background:#d8ff00;
+    border:none;
+    padding:14px 24px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.hero-btn-secondary {
+    background:transparent;
+    border:1px solid #ccc;
+    padding:14px 24px;
+    border-radius:30px;
+        cursor:pointer;
+} 
+
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+}
+
+
