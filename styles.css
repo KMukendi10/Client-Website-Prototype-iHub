@@ -173,3 +173,25 @@ ul{
 .program-card p{
     color:#666;
 }
+
+.cta-section{
+    padding:80px 5%;
+}
+
+.cta-box{
+    background:#d8ff00;
+    border-radius:25px;
+    padding:50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.btn-black{
+    background:#111;
+    color:white;
+    padding:15px 25px;
+    border-radius:30px;
+}
