@@ -212,3 +212,95 @@ ul{
     padding:15px 25px;
     border-radius:30px;
 }
+.testimonial-section{
+    padding:100px 5%;
+}
+
+.testimonial-card{
+    background:#09111f;
+    color:white;
+    border-radius:25px;
+    padding:60px;
+}
+.quote-icon{
+    width:70px;
+    height:70px;
+    background:#d8ff00;
+    border-radius:15px;
+    margin-bottom:30px;
+}
+
+.testimonial-card h2{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.author{
+    color:#d8ff00;
+    font-weight:bold;
+}
+.newsletter{
+    padding:0 5% 100px;
+}
+
+.newsletter-content{
+    background:#d8ff00;
+    border-radius:25px;
+    padding:50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.newsletter-text h2{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.newsletter-form{
+    display:flex;
+    background:white;
+    border-radius:50px;
+    padding:10px;
+}
+
+.newsletter-form input{
+    border:none;
+    outline:none;
+    padding:15px;
+    width:250px;
+}
+
+footer{
+    background:#09111f;
+    color:white;
+    padding:80px 5%;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+}
+
+.footer-column h2,
+.footer-column h3{
+    color:#d8ff00;
+    margin-bottom:20px;
+}
+.footer-column p,
+.footer-column li,
+.footer-column small{
+    color:#ddd;
+    margin-bottom:10px;
+}
+
+.footer-column a{
+    color:#ddd;
+}
+
+.footer-column a:hover{
+    color:#d8ff00;
+}
