@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Heglvetica, sans-serif;
     background:#ffffff;
     color:#111;
     line-height:1.6;
@@ -23,4 +23,41 @@ a{
 
 ul{
     list-style:none;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 5%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;}
+
+.logo-box{
+    width:25px;
+    height:25px;
+    background:#d8ff00;
+    border-radius:6px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+.nav-links a{
+    color:#111;
+    font-weight:500;
+}
+
+.join-btn{
+    background:#111;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:30px;
+    cursor:pointer;
 }
