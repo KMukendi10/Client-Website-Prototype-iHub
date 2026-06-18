@@ -195,3 +195,20 @@ ul{
     padding:15px 25px;
     border-radius:30px;
 }
+.partners-section{
+    padding:100px 5%;
+}
+
+.partners-logos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+.partner-logo{
+    border:1px solid #ddd;
+    padding:15px 25px;
+    border-radius:30px;
+}
