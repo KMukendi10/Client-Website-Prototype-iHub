@@ -40,29 +40,36 @@
             </section>
             
             <section class="contact-section">
-            <div class="contact-info">
-            <h2>Contact Details</h2>
-            <p><strong>Email:</strong> info@ihub.africa</p>
-            <p><strong>Location:</strong> South Africa</p>
-            <p><strong>Focus:</strong> Digital skills, web development, soft skills, and career readiness.</p>
-            </div>
-            
-            <form class="contact-form" id="contactForm" novalidate>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
-            <small class="error-message" id="nameError"></small>
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-            <small class="error-message" id="emailError"></small>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
-            <small class="error-message" id="messageError"></small>
-            
-            <button type="submit" class="btn primary-btn">Send Message</button>
-            <p class="success-message" id="successMessage"></p>
-            </form>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <small class="error-message" id="nameError"></small>
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <small class="error-message" id="emailError"></small>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+                    <small class="error-message" id="messageError"></small>
+                    
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                    <p class="success-message" id="successMessage"></p>
+                    
+                    <h2>Contact Details</h2>
+                    <p><strong>Email:</strong> info@ihub.africa</p>
+                    <p><strong>Location:</strong> South Africa</p>
+                    <p><strong>Focus:</strong> Digital skills, web development, soft skills, and career readiness.</p>
+                </form>
+        </section>
+
+        <section id="map">
+            <iframe src="https://www.google.com/maps?q=Johannesburg&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"></iframe>
         </section>
     </main>
 </header>
