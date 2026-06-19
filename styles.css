@@ -271,6 +271,15 @@ ul{
     width:250px;
 }
 
+.newsletter-form button{
+    background:#111;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:50px;
+    cursor:pointer;
+}
+
 footer{
     background:#09111f;
     color:white;
