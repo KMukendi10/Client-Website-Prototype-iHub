@@ -305,6 +305,279 @@ footer{
     color:#d8ff00;
 }
 
+
+.about-hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:50px;
+    padding:100px 5%;
+}
+
+
+.about-content h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+
+.about-content p{
+    color:#666;
+    max-width:550px;
+    margin-bottom:30px;
+}
+
+
+
+.green-btn{
+    background:#d8ff00;
+    color:#111;
+    padding:14px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+
+
+.about-image img{
+    width:100%;
+    border-radius:25px;
+}
+
+
+
+.mission-vision{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    padding:100px 5%;
+
+}
+
+
+
+.info-card{
+
+    border:1px solid #eee;
+    border-radius:20px;
+    padding:35px;
+    background:white;
+
+}
+
+
+
+.info-card h2{
+
+    font-size:2rem;
+    margin-bottom:15px;
+
+}
+
+
+
+.info-card p{
+
+    color:#666;
+
+}
+
+
+
+
+.values{
+
+    padding:100px 5%;
+
+}
+
+
+
+.values > h2{
+
+    text-align:center;
+    font-size:2.8rem;
+
+}
+
+
+
+.section-text{
+
+    text-align:center;
+    color:#666;
+    margin:20px auto 50px;
+
+}
+
+
+
+.values-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+
+
+.value-card{
+
+    border:1px solid #eee;
+    border-radius:20px;
+    padding:30px;
+
+}
+
+
+
+.value-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.value-card p{
+
+    color:#666;
+
+}
+
+
+
+
+.story{
+
+    padding:100px 5%;
+}
+
+
+
+.story h2{
+
+    text-align:center;
+    font-size:2.8rem;
+
+}
+
+
+
+.story > p{
+
+    text-align:center;
+    color:#666;
+
+}
+
+
+
+.timeline-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:50px;
+
+}
+
+
+
+.timeline-card{
+
+    border:1px solid #eee;
+    border-radius:20px;
+    padding:30px;
+
+}
+
+
+
+.timeline-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.timeline-card p{
+
+    color:#666;
+
+}
+
+
+
+
+.founders{
+
+    padding:100px 5%;
+}
+
+
+
+.founders h2{
+
+    text-align:center;
+    font-size:2.8rem;
+
+}
+
+
+
+.founder-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:50px;
+
+}
+
+
+
+.founder-card img{
+
+    width:100%;
+    border-radius:20px;
+
+}
+
+
+
+.founder-card h3{
+
+    margin-top:15px;
+
+}
+
+
+
+
+.community{
+
+    background:#d8ff00;
+    margin:0 5% 100px;
+    border-radius:25px;
+    padding:60px;
+    text-align:center;
+
+}
+
+
+
+.community h2{
+
+    font-size:2.8rem;
+
+}
+
 @media(max-width:900px){
 
     .hero{
