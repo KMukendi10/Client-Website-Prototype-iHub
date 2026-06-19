@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iHub Africa | Home</title>
-
+    <link rel="icon" href="./assests/iHubLogo.webp" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -189,22 +189,106 @@
         </div>
 
     </section>
-
-   
-
-
+    
     <section class="testimonial-section">
-
-        <div class="testimonial-card">
-
-            <div class="quote-icon"></div>
-
-            <h2>iHub gave me the confidence to move from learning code to shipping products with real teams</h2>
-
-            <p class="author">Nhlanhla Ntlangase – Alumni Story </p>
-
+    
+    <div class="container">
+        <div class="section-header">
+            <p class="section-label">TESTIMONIALS</p>
+            <h2>Real stories from our alumni</h2>
+            <p>Hear directly from the people who've been through the program.</p>
         </div>
 
+        <div class="testimonial-carousel" data-carousel tabindex="0">
+            <button class="carousel-arrow prev" aria-label="Previous testimonial">
+                &#8249;
+            </button>
+
+            <div class="testimonial-track-wrapper">
+                <div class="testimonial-track" data-track>
+
+                    <article class="testimonial-card">
+                        <img
+                            class="testimonial-photo"
+                            src="./assests/testimonials/nhlanhla.webp"
+                            alt="Nhlanhla Ntlangase"
+                            data-initials="NN"
+                        >
+
+                        <div class="testimonial-body">
+                            <div class="quote-icon"></div>
+                            <p class="testimonial-quote">
+                                iHub gave me the confidence to move from learning code to shipping products with real teams.
+                            </p>
+                            <p class="author">Nhlanhla Ntlangase</p>
+                            <p class="role">Web Development &middot; 2024 Cohort</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <img
+                            class="testimonial-photo"
+                            src="./assests/testimonials/refilwe.webp"
+                            alt="Refilwe Mokoena"
+                            data-initials="RM"
+                        >
+
+                        <div class="testimonial-body">
+                            <div class="quote-icon"></div>
+                            <p class="testimonial-quote">
+                                The career coaching turned my CV from invisible to interview-ready in three weeks.
+                            </p>
+                            <p class="author">Refilwe Mokoena</p>
+                            <p class="role">Career Readiness &middot; 2023 Cohort</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <img
+                            class="testimonial-photo"
+                            src="./assests/testimonials/sipho.webp"
+                            alt="Sipho Dlamini"
+                            data-initials="SD"
+                        >
+
+                        <div class="testimonial-body">
+                            <div class="quote-icon"></div>
+                            <p class="testimonial-quote">
+                                My mentor pushed me to apply for roles I didn't think I was ready for. Turns out I was.
+                            </p>
+                            <p class="author">Sipho Dlamini</p>
+                            <p class="role">Mentorship &middot; 2024 Cohort</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <img
+                            class="testimonial-photo"
+                            src="./assests/testimonials/lerato.webp"
+                            alt="Lerato Khumalo"
+                            data-initials="LK"
+                        >
+
+                        <div class="testimonial-body">
+                            <div class="quote-icon"></div>
+                            <p class="testimonial-quote">
+                                I walked in knowing nothing about code. Six months later I shipped my first client site.
+                            </p>
+                            <p class="author">Lerato Khumalo</p>
+                            <p class="role">Web Development &middot; 2025 Cohort</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <button class="carousel-arrow next" aria-label="Next testimonial">
+                &#8250;
+            </button>
+        </div>
+
+        <div class="carousel-dots" data-dots></div>
+    </div>
     </section>
     
     <section class="partners-section">
@@ -300,19 +384,6 @@
 
             <div class="footer-column">
 
-                <h3>Programs</h3>
-
-                <ul>
-                    <li>Web Development</li>
-                    <li>Career Readiness</li>
-                    <li>Mentorship</li>
-                    <li>Coaching</li>
-                </ul>
-
-            </div>
-
-            <div class="footer-column">
-
                 <h3>Contact</h3>
 
                 <p>Johannesburg, South Africa</p>
@@ -324,6 +395,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-    width:90%;
+    width:100%;
     max-width:1200px;
     margin:auto;
 }
@@ -85,7 +85,7 @@ ul{
 }
 
 .hero-btn{
-    background:#d8ff00;
+    background:#ecaf21;
     border:none;
     padding:14px 24px;
     border-radius:30px;
@@ -107,7 +107,7 @@ ul{
 }
 
 .stats{
-    background:#09111f;
+    background:#000000;
     color:white;
     width:90%;
     max-width:1200px;
@@ -121,7 +121,7 @@ ul{
 }
 
 .stats h2{
-    color:#d8ff00;
+    color:#ecaf21;
     font-size:2.5rem;
 }
 
@@ -177,7 +177,7 @@ ul{
 }
 
 .cta-box{
-    background:#d8ff00;
+    background:#ecaf21;
     border-radius:25px;
     padding:50px;
 
@@ -188,7 +188,7 @@ ul{
 }
 
 .btn-black{
-    background:#111;
+    background:#000000;
     color:white;
     padding:15px 25px;
     border-radius:30px;
@@ -215,7 +215,7 @@ ul{
 }
 
 .testimonial-card{
-    background:#09111f;
+    background:#000000;
     color:white;
     border-radius:25px;
     padding:60px;
@@ -223,7 +223,7 @@ ul{
 .quote-icon{
     width:70px;
     height:70px;
-    background:#d8ff00;
+    background:#ecaf21;
     border-radius:15px;
     margin-bottom:30px;
 }
@@ -234,7 +234,7 @@ ul{
 }
 
 .author{
-    color:#d8ff00;
+    color:#ecaf21;
     font-weight:bold;
 }
 .newsletter{
@@ -242,7 +242,7 @@ ul{
 }
 
 .newsletter-content{
-    background:#d8ff00;
+    background:#ecaf21;
     border-radius:25px;
     padding:50px;
 
@@ -272,7 +272,7 @@ ul{
 }
 
 .newsletter-form button{
-    background:#111;
+    background:#000000;
     color:white;
     border:none;
     padding:15px 25px;
@@ -281,20 +281,19 @@ ul{
 }
 
 footer{
-    background:#09111f;
+    background:#000000;
     color:white;
     padding:80px 5%;
 }
 
 .footer-container{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-column h2,
 .footer-column h3{
-    color:#d8ff00;
+    color:#ecaf21;
     margin-bottom:20px;
 }
 .footer-column p,
@@ -309,7 +308,7 @@ footer{
 }
 
 .footer-column a:hover{
-    color:#d8ff00;
+    color:#ecaf21;
 }
 
 .about-hero{
@@ -333,7 +332,7 @@ footer{
 }
 
 .green-btn{
-    background:#d8ff00;
+    background:#ecaf21;
     color:#111;
     padding:14px 25px;
     border-radius:30px;
@@ -510,7 +509,7 @@ footer{
 
 .community{
 
-    background:#d8ff00;
+    background:#ecaf21;
     margin:0 5% 100px;
     border-radius:25px;
     padding:60px;
@@ -542,7 +541,7 @@ footer{
 }
 
 .program-hero-image{
-    background:#09111f;
+    background:#000000;
     height:300px; border-radius:25px;
     position:relative;
 }
@@ -550,7 +549,7 @@ footer{
 .lime-box{
     width:140px;
     height:70px;
-    background:#d8ff00;
+    background:#ecaf21;
     border-radius:15px;
     position:absolute;
     top:20px;
@@ -560,7 +559,7 @@ footer{
 .dark-box{
     width:180px;
     height:70px;
-    background:#111;
+    background:#000000;
     border-radius:15px;
     position:absolute;
     bottom:20px;
@@ -583,16 +582,16 @@ footer{
 }
 
 .program-item.active{
-    background:#09111f;
+    background:#000000;
     color:white;
 }
-
 
 .coach-section{
     padding:80px 5%;
 }
 
 /* Dido - CONTACT HERO */
+
 .contact-hero {
     display: flex;
     align-items: center;
@@ -600,27 +599,33 @@ footer{
     gap: 3rem;
     padding: 4rem 8%;
 }
+
 .contact-hero-content {
     flex: 1;
 }
+
 .contact-hero-content h1 {
     font-size: 3rem;
-    color: #0F172A;
+    color: #000000;
     margin-bottom: 1rem;
 }
+
 .contact-hero-content p {
     font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
 }
+
 .contact-hero-image {
     flex: 1;
 }
+
 .contact-hero-image img {
     width: 100%;
     border-radius: 12px;
     display: block;
 }
+
 /* CONTACT SECTION */
 .contact-section {
     display: flex;
@@ -628,12 +633,14 @@ footer{
     gap: 2rem;
     padding: 4rem 8%;
 }
+
 .contact-form {
     background: white;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
+
 .contact-form label {
     display: block;
     margin-bottom: 0.5rem;
@@ -641,6 +648,7 @@ footer{
     font-weight: 600;
     color: #333;
 }
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -650,10 +658,12 @@ footer{
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
+
 .contact-form input,
 .contact-form textarea {
     outline: none;
 }
+
 .primary-btn {
     display: inline-block;
     background: #000000;
@@ -666,9 +676,11 @@ footer{
     margin-top: 1rem;
     transition: 0.3s;
 }
+
 .primary-btn {
     background: #050505;
 }
+
 .contact-info {
     background: #ffffff;
     color: rgb(0, 0, 0);
@@ -676,19 +688,23 @@ footer{
     border-radius: 12px;
     height: fit-content;
 }
+
 .contact-info h2 {
     margin-bottom: 1rem;
 }
+
 .contact-info p {
     margin-bottom: 1rem;
     line-height: 1.6;
 }
+
 .error-message {
     color: red;
     font-size: 0.85rem;
     display: block;
     min-height: 18px;
 }
+
 .success-message {
     color: green;
     margin-top: 1rem;
@@ -712,7 +728,7 @@ footer{
 }
 
 .program-hero-image {
-    background: #09111f;
+    background: #000000;
     height: 300px;
     border-radius: 25px;
     position: relative;
@@ -721,7 +737,7 @@ footer{
 .lime-box {
     width: 140px;
     height: 70px;
-    background: #d8ff00;
+    background: #ecaf21;
     border-radius: 15px;
     position: absolute;
     top: 20px;
@@ -731,7 +747,7 @@ footer{
 .dark-box {
     width: 180px;
     height: 70px;
-    background: #111;
+    background: #000000;
     border-radius: 15px;
     position: absolute;
     bottom: 20px;
@@ -756,7 +772,7 @@ footer{
 }
 
 .program-item.active {
-    background: #09111f;
+    background: #000000;
     color: white;
 }
 
@@ -767,7 +783,7 @@ footer{
 }
 
 .coach-card {
-    background: #09111f;
+    background: #000000;
     color: white;
     border-radius: 25px;
     padding: 50px;
@@ -800,7 +816,7 @@ footer{
     content: "";
     width: 80px;
     height: 50px;
-    background: #d8ff00;
+    background: #ecaf21;
     border-radius: 12px;
     position: absolute;
     top: -15px;
@@ -844,7 +860,6 @@ footer{
     }
 }
 
-
 @media screen and (min-width: 1440px){
 
     .container{
@@ -861,8 +876,6 @@ footer{
 
 }
 
-
-
 @media screen and (max-width:1200px){
 
     .hero{
@@ -878,7 +891,6 @@ footer{
     }
 
 }
-
 
 @media screen and (max-width:1024px){
 
@@ -925,8 +937,6 @@ footer{
     }
 
 }
-
-
 
 @media screen and (max-width:768px){
 
@@ -989,8 +999,6 @@ footer{
     }
 
 }
-
-
 
 @media screen and (max-width:480px){
 
