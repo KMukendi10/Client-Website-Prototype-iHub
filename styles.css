@@ -621,6 +621,70 @@ footer{
     left:20px;
 } 
 
+.program-options{
+    padding:80px 5%;
+}
+
+.program-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border:1px solid #eee;
+}
+
+.program-item{
+    padding:25px;
+    border:1px solid #eee;
+}
+
+.program-item.active{
+    background:#09111f;
+    color:white;
+}
+
+
+.coach-section{
+    padding:80px 5%;
+}
+
+.coach-card{
+    background:#09111f;
+    color:white;
+    border-radius:25px;
+    padding:50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.gallery-section{
+    padding:80px 5%;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.gallery-card{
+    height:180px;
+    background:#5f8f73;
+    border-radius:20px;
+    position:relative;
+}
+
+.gallery-card::before{
+    content:"";
+    width:80px;
+    height:50px;
+    background:#d8ff00;
+    border-radius:12px;
+    position:absolute;
+    top:-15px;
+    right:15px;
+}
 
 
 @media(max-width:900px){
