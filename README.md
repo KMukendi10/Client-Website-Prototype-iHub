@@ -33,7 +33,7 @@ Our website prototype was designed to communicate iHub Africa's mission, showcas
 
 * Home Page
 * About iHub Page
-* Programs/Services Page
+* Programs Page
 * Contact Page
 
 ### JavaScript Features
@@ -73,22 +73,22 @@ Our website prototype was designed to communicate iHub Africa's mission, showcas
 ## Project Structure
 
 ```text
-iHub-Africa-Website/
+Client-Website-Prototype-iHub/
 │
 ├── index.html
 ├── about.html
 ├── programs.html
 ├── contact.html
 │
-├── css/
-│   └── style.css
+├── styles.css
+│   
 │
-├── js/
-│   └── script.js
+├── script.js
+│   
 │
-├── assets/
-│   ├── images
-│   └── icons
+├── Assets/
+│   ├── Images
+│   └── Icons
 │
 └── README.md
 ```

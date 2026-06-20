@@ -214,18 +214,37 @@ ul {
     padding: 100px 5%;
 }
 
-.partners-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-}
-
 .partner-logo {
     border: 1px solid #ddd;
     padding: 15px 25px;
     border-radius: 30px;
+}
+
+.partners-marquee {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.partners-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollPartners 18s linear infinite;
+}
+
+.partners-track.paused {
+    animation-play-state: paused;
+}
+
+@keyframes scrollPartners {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* TESTIMONIALS */
@@ -431,13 +450,18 @@ footer {
     margin-bottom: 30px;
 }
 
-.green-btn {
+.learn-btn {
     background: #ecaf21;
     color: #111;
-    padding: 14px 25px;
+    border: none;
+    height: 44px;
+    padding: 14px 24px;
     border-radius: 30px;
-    font-weight: bold;
-    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-image img {
@@ -577,15 +601,15 @@ footer {
 
 /* PROGRAM PAGE */
 
-/* PROGRAMS HERO */
-
 .programs-hero {
     padding: 100px 5%;
 }
 
 .programs-content {
-    max-width: 800px;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
 }
 
 .program-text h1 {
@@ -594,11 +618,16 @@ footer {
     margin-bottom: 20px;
 }
 
-.program-text p {
+.program-text p:not(.section-label) {
     color: #666;
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin-bottom: 20px;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.programs-image img {
+    width: 100%;
+    border-radius: 25px;
+    display: block;
 }
 
 /* PROGRAM PATHWAYS */
@@ -731,37 +760,31 @@ footer {
 
 /* CONTACT PAGE */
 
-.contact-hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    padding: 4rem 8%;
-}
+/* CONTACT HERO */
 
-.contact-hero-content {
-    flex: 1;
+.contact-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 5%;
 }
 
 .contact-hero-content h1 {
-    font-size: 3rem;
-    color: #000000;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 .contact-hero-content p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-.contact-hero-image {
-    flex: 1;
+    color: #666;
+    max-width: 550px;
+    margin-bottom: 30px;
 }
 
 .contact-hero-image img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 25px;
     display: block;
 }
 
@@ -828,6 +851,16 @@ footer {
     line-height: 1.6;
 }
 
+.map-section {
+    padding: 80px 5%;
+}
+
+.map-section iframe {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
 .error-message {
     color: red;
     font-size: 0.85rem;
@@ -879,7 +912,7 @@ footer {
 
     .hero,
     .about-hero,
-    .program-hero-content {
+    .programs-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
@@ -911,11 +944,10 @@ footer {
 
     .cta-box,
     .newsletter-content,
-    .coach-card,
-    .contact-hero {
-        flex-direction: column;
-        text-align: center;
-    }
+    .coach-card {
+    flex-direction: column;
+    text-align: center;
+}
 
     .footer-container {
         flex-wrap: wrap;
@@ -946,9 +978,10 @@ footer {
 
     .hero-text h1,
     .about-content h1,
-    .program-text h1 {
-        font-size: 2.5rem;
-    }
+    .program-text h1,
+    .contact-hero-content h1 {
+    font-size: 2.5rem;
+}
 
     .hero-buttons {
         flex-direction: column;
@@ -1030,4 +1063,30 @@ footer {
     .newsletter-text h2 {
         font-size: 1.8rem;
     }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .contact-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-hero {
+        padding: 60px 20px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
 }

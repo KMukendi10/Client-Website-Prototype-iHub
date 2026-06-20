@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iHub Africa | Contact</title>
 
+    <link rel="icon" href="./Assets/Icons/iHubLogo.webp" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
         <nav class="navbar">
 
             <div class="logo">
-                <img src="./assests/iHubLogo.webp" alt="iHub Africa Logo">
+                <img src="./Assets/Icons/iHubLogo.webp" alt="iHub Africa Logo">
                 <h2>iHub Africa</h2>
             </div>
 
@@ -25,56 +26,132 @@
             </ul>
 
             <button class="join-btn">Join Us</button>
-            
+
         </nav>
-        
-        <main>
-            <section class="contact-hero">
-                <div class="contact-hero-content">
-                    <h1>Get in touch with iHub Africa</h1>
-                    <p>Have a question about the programme or want to learn more? Send us a message.</p>
-                </div>
-                <div class="contact-hero-image">
-                    <img src="images/contact-hero.jpg" alt="Contact iHub Africa">
-                </div>
-            </section>
+    </header>
+
+    <main>
+
+        <section class="contact-hero">
+
+            <div class="contact-hero-content">
+
+                <h1>Get in touch with iHub Africa</h1>
+
+                <p>
+                    Have a question about the programme or want to learn more?
+                    Send us a message.
+                </p>
+
+            </div>
+
+            <div class="contact-hero-image">
+                <img src="images/contact-hero.jpg" alt="Contact iHub Africa">
+            </div>
+
+        </section>
+
+        <section class="contact-section">
+
+            <form class="contact-form" id="contactForm" novalidate>
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+
+                <small class="error-message" id="nameError"></small>
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                >
+
+                <small class="error-message" id="emailError"></small>
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message"
+                ></textarea>
+
+                <small class="error-message" id="messageError"></small>
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message
+                </button>
+
+                <p class="success-message" id="successMessage"></p>
+
+            </form>
+
+            <div class="contact-info">
+
+                <h2>Contact Details</h2>
+
+                <p>
+                    <strong>Email:</strong>
+                    info@ihubafrica.co.za
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +27 68 615 2527
+                </p>
+
+                <p>
+                    <strong>Location:</strong>
+                    Johannesburg, South Africa
+                </p>
+
+                <p>
+                    <strong>Focus:</strong>
+                    Digital skills, web development, soft skills, mentorship,
+                    and career readiness.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="map-section">
+
+            <div class="container">
+
+            <div class="section-header">
+
+            <p class="section-label">VISIT US</p>
+
+            <h2>Find Us in Johannesburg</h2>
+
+            <p> Visit iHub Africa at The Media Mill in Braamfontein Werf and connect with our team in person.</p>
             
-            <section class="contact-section">
-                <form class="contact-form" id="contactForm" novalidate>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
-                    <small class="error-message" id="nameError"></small>
-                    
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
-                    <small class="error-message" id="emailError"></small>
-                    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
-                    <small class="error-message" id="messageError"></small>
-                    
-                    <button type="submit" class="btn primary-btn">Send Message</button>
-                    <p class="success-message" id="successMessage"></p>
-                    
-                    <div class="contact-info">
-                        <h2>Contact Details</h2>
-                        <p><strong>Email:</strong> info@ihub.africa</p>
-                        <p><strong>Location:</strong> South Africa</p>
-                        <p><strong>Focus:</strong> Digital skills, web development, soft skills, and career readiness.</p>
-                    </div>
-                </form>
-            </section>
-            
-            <section id="map">
-                <iframe src="https://www.google.com/maps?q=Johannesburg&output=embed"
+            </div>
+            </div>
+
+            <iframe
+                src="https://maps.google.com/maps?q=7%20Quince%20Street,%20The%20Media%20Mill,%20Braamfontein%20Werf,%20Johannesburg&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="400"
                 style="border:0;"
                 allowfullscreen=""
-                loading="lazy"></iframe>
-            </section>
-        </main>
-    </header>
+                loading="lazy">
+            </iframe>
+
+        </section>
+
+    </main>
 
     <footer>
 
@@ -121,6 +198,8 @@
         </div>
 
     </footer>
-    
+
+    <script src="script.js"></script>
+
 </body>
 </html>

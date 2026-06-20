@@ -3,11 +3,13 @@
    Handles:
    1. Testimonial card carousel (arrows, dots, swipe, keyboard, autoplay)
    2. Partners logo marquee (infinite right-moving banner)
+   3. Contact Form Validation
 =========================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
     initTestimonialCarousel();
     initPartnersMarquee();
+    initContactForm();
 });
 
 /* -----------------------------------------
@@ -141,4 +143,55 @@ function initPartnersMarquee() {
     /* Pause on hover so people can read a specific logo */
     marquee.addEventListener('mouseenter', () => track.classList.add('paused'));
     marquee.addEventListener('mouseleave', () => track.classList.remove('paused'));
+}
+
+/* -----------------------------------------
+   3. Contact Form Validation
+----------------------------------------- */
+function initContactForm() {
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const messageInput = document.getElementById("message");
+
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const messageError = document.getElementById("messageError");
+    const successMessage = document.getElementById("successMessage");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+        messageError.textContent = "";
+        successMessage.textContent = "";
+
+        let isValid = true;
+
+        if (nameInput.value.trim() === "") {
+            nameError.textContent = "Please enter your full name.";
+            isValid = false;
+        }
+
+        if (emailInput.value.trim() === "") {
+            emailError.textContent = "Please enter your email address.";
+            isValid = false;
+        } else if (!emailInput.value.includes("@") || !emailInput.value.includes(".")) {
+            emailError.textContent = "Please enter a valid email address.";
+            isValid = false;
+        }
+
+        if (messageInput.value.trim() === "") {
+            messageError.textContent = "Please enter your message.";
+            isValid = false;
+        }
+
+        if (isValid) {
+            successMessage.textContent = "Your message has been sent successfully!";
+            form.reset();
+        }
+    });
 }
