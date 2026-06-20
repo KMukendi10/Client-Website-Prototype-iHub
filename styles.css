@@ -53,6 +53,11 @@ ul {
 .nav-links a {
     color: #111;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ecaf21;
 }
 
 .join-btn {
@@ -62,6 +67,13 @@ ul {
     padding: 12px 22px;
     border-radius: 30px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.join-btn:hover {
+    background: #ecaf21;
+    color: #111;
+    transform: translateY(-2px);
 }
 
 /* HERO */
@@ -98,6 +110,13 @@ ul {
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #111;
+    color: white;
+    transform: translateY(-2px);
 }
 
 .hero-btn-secondary {
@@ -106,11 +125,23 @@ ul {
     padding: 14px 24px;
     border-radius: 30px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.hero-image img {
+.hero-btn-secondary:hover {
+    background: #111;
+    color: white;
+    border-color: #111;
+    transform: translateY(-2px);
+}
+
+.hero-image img,
+.about-image img,
+.programs-image img,
+.contact-hero-image img {
     width: 100%;
     border-radius: 25px;
+    display: block;
 }
 
 /* STATS */
@@ -170,18 +201,35 @@ ul {
     gap: 25px;
 }
 
-.program-card {
+.program-card,
+.info-card,
+.value-card,
+.timeline-card {
     border: 1px solid #eee;
     border-radius: 20px;
     padding: 30px;
     background: white;
+    transition: all 0.3s ease;
 }
 
-.program-card h3 {
+.program-card:hover,
+.info-card:hover,
+.value-card:hover,
+.timeline-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.program-card h3,
+.value-card h3,
+.timeline-card h3 {
     margin-bottom: 15px;
 }
 
-.program-card p {
+.program-card p,
+.info-card p,
+.value-card p,
+.timeline-card p {
     color: #666;
 }
 
@@ -206,6 +254,13 @@ ul {
     color: white;
     padding: 15px 25px;
     border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-black:hover {
+    background: white;
+    color: #111;
+    transform: translateY(-2px);
 }
 
 /* PARTNERS */
@@ -259,31 +314,6 @@ ul {
     padding: 100px 5%;
 }
 
-.testimonial-card {
-    background: #000000;
-    color: white;
-    border-radius: 25px;
-    padding: 60px;
-}
-
-.quote-icon {
-    width: 70px;
-    height: 70px;
-    background: #ecaf21;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-
-.testimonial-card h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.author {
-    color: #ecaf21;
-    font-weight: bold;
-}
-
 .testimonial-carousel {
     position: relative;
     display: flex;
@@ -304,6 +334,10 @@ ul {
 
 .testimonial-card {
     min-width: 100%;
+    background: #000000;
+    color: white;
+    border-radius: 25px;
+    padding: 60px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -320,6 +354,24 @@ ul {
     flex: 1;
 }
 
+.quote-icon {
+    width: 70px;
+    height: 70px;
+    background: #ecaf21;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.testimonial-card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.author {
+    color: #ecaf21;
+    font-weight: bold;
+}
+
 .carousel-arrow {
     background: #000000;
     color: white;
@@ -330,6 +382,12 @@ ul {
     font-size: 2rem;
     cursor: pointer;
     z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background: #ecaf21;
+    color: #111;
 }
 
 .carousel-dots {
@@ -394,6 +452,12 @@ ul {
     padding: 15px 25px;
     border-radius: 50px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #ecaf21;
+    color: #111;
 }
 
 /* FOOTER */
@@ -428,6 +492,7 @@ footer {
 
 .footer-column a {
     color: #ddd;
+    transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
@@ -436,7 +501,9 @@ footer {
 
 /* ABOUT PAGE */
 
-.about-hero {
+.about-hero,
+.programs-content,
+.contact-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -444,13 +511,17 @@ footer {
     padding: 100px 5%;
 }
 
-.about-content h1 {
+.about-content h1,
+.program-text h1,
+.contact-hero-content h1 {
     font-size: 4rem;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
-.about-content p {
+.about-content p,
+.program-text p:not(.section-label),
+.contact-hero-content p {
     color: #666;
     max-width: 550px;
     margin-bottom: 30px;
@@ -466,13 +537,16 @@ footer {
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.about-image img {
-    width: 100%;
-    border-radius: 25px;
+.learn-btn:hover {
+    background: #111;
+    color: white;
+    transform: translateY(-2px);
 }
 
 .mission-vision {
@@ -482,111 +556,57 @@ footer {
     padding: 100px 5%;
 }
 
-.info-card {
-    border: 1px solid #eee;
-    border-radius: 20px;
-    padding: 35px;
-    background: white;
-}
-
 .info-card h2 {
     font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.info-card p {
-    color: #666;
-}
-
-.values {
+.values,
+.story,
+.founders {
     padding: 100px 5%;
 }
 
-.values > h2 {
+.values > h2,
+.story h2,
+.founders h2 {
     text-align: center;
     font-size: 2.8rem;
 }
 
-.section-text {
+.section-text,
+.story > p {
     text-align: center;
     color: #666;
     margin: 20px auto 50px;
 }
 
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.value-card {
-    border: 1px solid #eee;
-    border-radius: 20px;
-    padding: 30px;
-}
-
-.value-card h3 {
-    margin-bottom: 15px;
-}
-
-.value-card p {
-    color: #666;
-}
-
-.story {
-    padding: 100px 5%;
-}
-
-.story h2 {
-    text-align: center;
-    font-size: 2.8rem;
-}
-
-.story > p {
-    text-align: center;
-    color: #666;
-}
-
+.values-grid,
 .timeline-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+}
+
+.timeline-grid,
+.founder-grid {
     margin-top: 50px;
-}
-
-.timeline-card {
-    border: 1px solid #eee;
-    border-radius: 20px;
-    padding: 30px;
-}
-
-.timeline-card h3 {
-    margin-bottom: 15px;
-}
-
-.timeline-card p {
-    color: #666;
-}
-
-.founders {
-    padding: 100px 5%;
-}
-
-.founders h2 {
-    text-align: center;
-    font-size: 2.8rem;
 }
 
 .founder-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    margin-top: 50px;
 }
 
 .founder-card img {
     width: 100%;
     border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.founder-card img:hover {
+    transform: scale(1.03);
 }
 
 .founder-card h3 {
@@ -608,35 +628,8 @@ footer {
 /* PROGRAM PAGE */
 
 .programs-hero {
-    padding: 100px 5%;
+    padding: 0;
 }
-
-.programs-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 50px;
-}
-
-.program-text h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.program-text p:not(.section-label) {
-    color: #666;
-    max-width: 550px;
-    margin-bottom: 30px;
-}
-
-.programs-image img {
-    width: 100%;
-    border-radius: 25px;
-    display: block;
-}
-
-/* PROGRAM PATHWAYS */
 
 .program-options {
     padding: 100px 5%;
@@ -681,44 +674,6 @@ footer {
     color: #d9d9d9;
 }
 
-/* RESPONSIVE For Programs Page*/
-
-@media screen and (max-width: 1024px) {
-
-    .program-text h1 {
-        font-size: 3rem;
-    }
-
-    .program-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    .programs-hero {
-        padding: 80px 20px;
-    }
-
-    .program-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .program-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-
-    .program-text h1 {
-        font-size: 2rem;
-    }
-
-}
-
 .coach-section {
     padding: 80px 5%;
 }
@@ -751,6 +706,12 @@ footer {
     background: #5f8f73;
     border-radius: 20px;
     position: relative;
+    transition: all 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .gallery-card::before {
@@ -765,34 +726,6 @@ footer {
 }
 
 /* CONTACT PAGE */
-
-/* CONTACT HERO */
-
-.contact-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 50px;
-    padding: 100px 5%;
-}
-
-.contact-hero-content h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.contact-hero-content p {
-    color: #666;
-    max-width: 550px;
-    margin-bottom: 30px;
-}
-
-.contact-hero-image img {
-    width: 100%;
-    border-radius: 25px;
-    display: block;
-}
 
 .contact-section {
     display: flex;
@@ -827,6 +760,11 @@ footer {
     outline: none;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ecaf21;
+}
+
 .primary-btn {
     display: inline-block;
     background: #050505;
@@ -837,7 +775,13 @@ footer {
     cursor: pointer;
     font-size: 1rem;
     margin-top: 1rem;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #ecaf21;
+    color: #111;
+    transform: translateY(-2px);
 }
 
 .contact-info {
@@ -887,7 +831,10 @@ footer {
         max-width: 1400px;
     }
 
-    .hero-text h1 {
+    .hero-text h1,
+    .about-content h1,
+    .program-text h1,
+    .contact-hero-content h1 {
         font-size: 5rem;
     }
 
@@ -918,13 +865,16 @@ footer {
 
     .hero,
     .about-hero,
-    .programs-content {
+    .programs-content,
+    .contact-hero {
         grid-template-columns: 1fr;
         text-align: center;
     }
 
     .hero-text p,
-    .about-content p {
+    .about-content p,
+    .program-text p:not(.section-label),
+    .contact-hero-content p {
         margin: 0 auto 30px;
     }
 
@@ -939,7 +889,7 @@ footer {
 
     .programs-grid,
     .program-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .values-grid,
@@ -951,9 +901,9 @@ footer {
     .cta-box,
     .newsletter-content,
     .coach-card {
-    flex-direction: column;
-    text-align: center;
-}
+        flex-direction: column;
+        text-align: center;
+    }
 
     .footer-container {
         flex-wrap: wrap;
@@ -978,7 +928,10 @@ footer {
         gap: 15px;
     }
 
-    .hero {
+    .hero,
+    .about-hero,
+    .programs-content,
+    .contact-hero {
         padding: 60px 20px;
     }
 
@@ -986,8 +939,8 @@ footer {
     .about-content h1,
     .program-text h1,
     .contact-hero-content h1 {
-    font-size: 2.5rem;
-}
+        font-size: 2.5rem;
+    }
 
     .hero-buttons {
         flex-direction: column;
@@ -1015,6 +968,8 @@ footer {
     }
 
     .mission-vision,
+    .programs-grid,
+    .program-grid,
     .values-grid,
     .timeline-grid,
     .founder-grid,
@@ -1033,6 +988,11 @@ footer {
         width: 100%;
     }
 
+    .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -1047,7 +1007,8 @@ footer {
 @media screen and (max-width: 480px) {
     .hero-text h1,
     .about-content h1,
-    .program-text h1 {
+    .program-text h1,
+    .contact-hero-content h1 {
         font-size: 2rem;
     }
 
@@ -1069,30 +1030,4 @@ footer {
     .newsletter-text h2 {
         font-size: 1.8rem;
     }
-}
-
-@media screen and (max-width: 1024px) {
-
-    .contact-hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .contact-hero-content p {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    .contact-hero {
-        padding: 60px 20px;
-    }
-
-    .contact-hero-content h1 {
-        font-size: 2.5rem;
-    }
-
 }
