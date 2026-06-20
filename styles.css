@@ -9,6 +9,7 @@ body {
     background: #ffffff;
     color: #111;
     line-height: 1.6;
+    padding-top: 10px;
 }
 
 .container {
@@ -32,6 +33,13 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 25px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 .logo {
