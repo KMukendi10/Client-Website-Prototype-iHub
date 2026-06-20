@@ -214,12 +214,6 @@ ul {
     padding: 100px 5%;
 }
 
-.partner-logo {
-    border: 1px solid #ddd;
-    padding: 15px 25px;
-    border-radius: 30px;
-}
-
 .partners-marquee {
     width: 100%;
     overflow: hidden;
@@ -228,13 +222,25 @@ ul {
 
 .partners-track {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
     width: max-content;
-    animation: scrollPartners 18s linear infinite;
+    animation: scrollPartners 20s linear infinite;
 }
 
 .partners-track.paused {
     animation-play-state: paused;
+}
+
+.partner-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
 }
 
 @keyframes scrollPartners {
