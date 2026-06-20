@@ -311,7 +311,7 @@ ul {
 /* TESTIMONIALS */
 
 .testimonial-section {
-    padding: 100px 5%;
+    padding: 100px;
 }
 
 .testimonial-carousel {
@@ -334,8 +334,8 @@ ul {
 
 .testimonial-card {
     min-width: 100%;
-    background: #000000;
-    color: white;
+    background: #ffffff;
+    color: #ffffff;
     border-radius: 25px;
     padding: 60px;
     display: flex;
@@ -344,32 +344,14 @@ ul {
 }
 
 .testimonial-photo {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     object-fit: cover;
 }
 
 .testimonial-body {
     flex: 1;
-}
-
-.quote-icon {
-    width: 70px;
-    height: 70px;
-    background: #ecaf21;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-
-.testimonial-card h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.author {
-    color: #ecaf21;
-    font-weight: bold;
 }
 
 .carousel-arrow {
@@ -689,8 +671,6 @@ footer {
     gap: 20px;
 }
 
-/* GALLERY */
-
 .gallery-section {
     padding: 80px 5%;
 }
@@ -702,27 +682,27 @@ footer {
 }
 
 .gallery-card {
-    height: 180px;
-    background: #5f8f73;
+    overflow: hidden;
     border-radius: 20px;
-    position: relative;
+    height: 250px;
     transition: all 0.3s ease;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
 .gallery-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-card::before {
-    content: "";
-    width: 80px;
-    height: 50px;
-    background: #ecaf21;
-    border-radius: 12px;
-    position: absolute;
-    top: -15px;
-    right: 15px;
+.gallery-card:hover img {
+    transform: scale(1.05);
 }
 
 /* CONTACT PAGE */
