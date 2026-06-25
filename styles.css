@@ -992,12 +992,19 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 286px) {
     .hero-text h1,
     .about-content h1,
     .program-text h1,
     .contact-hero-content h1 {
         font-size: 2rem;
+    }
+
+    .hero,
+    .about-hero,
+    .programs-content,
+    .contact-hero {
+        padding: 250px 20px;
     }
 
     .section-header h2 {
